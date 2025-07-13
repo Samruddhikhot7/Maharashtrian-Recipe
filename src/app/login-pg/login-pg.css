@@ -1,0 +1,50 @@
+ h2{
+    margin-bottom: 15%;
+    margin-top: 3%;
+ }
+
+ /* main outer container */
+.main-cont {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://res.cloudinary.com/dlczdxdd4/image/upload/v1752135917/landing_page_fq7ukj.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* login container */
+.login-signup-cont {
+    height: 75vh;
+    width: 30vw;
+    text-align: center;
+    background-image: url("https://res.cloudinary.com/dk9fzvliu/image/upload/v1752169101/4510d76e5c76657fed7e2443b28c66e2_omcgvg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 3%;
+    min-width: 240px;
+    min-height: 400px;
+}
+
+/* for each element in form e.g input box */
+.form-element  {
+    padding: 20px;
+    width: 75%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: medium;
+}
+
+/* login or signup button */
+.btn  {
+    width:35%;
+    background-color: chartreuse;
+    border: 2px solid chartreuse;
+}

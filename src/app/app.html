@@ -1,11 +1,17 @@
-<div class="bg-landing">
+@if(islanding)  {
+  <div class="bg-landing">
   <h1 class="main-heading">Maharashtrian Recipe</h1>
   <div>
-    <button class="b1">
+    <button class="b1" (click) = "gotoSignup()">
       Sign Up
     </button>
-    <button class="b2">
+    <button class="b2" (click) = "gotoLogin()">
       Login
     </button>
   </div>
 </div>
+}
+
+@else {
+  <router-outlet></router-outlet>
+} 
