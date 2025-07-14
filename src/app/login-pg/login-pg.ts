@@ -13,4 +13,7 @@ export class LoginPg {
   gotoSignup()  {
     this.router.navigate(['/signup']);
   }
+  gotoHeader()  {
+    this.router.navigate(['/homepage']);
+  }
 }

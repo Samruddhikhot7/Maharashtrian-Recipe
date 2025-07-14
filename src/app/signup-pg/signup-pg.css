@@ -18,7 +18,7 @@
 
 /* login page container */
 .login-signup-cont {
-    height: 75vh;
+    height: 80vh;
     width: 30vw;
     text-align: center;
     background-image: url("https://res.cloudinary.com/dk9fzvliu/image/upload/v1752169101/4510d76e5c76657fed7e2443b28c66e2_omcgvg.jpg");
@@ -44,8 +44,11 @@
 
 /* login or signup buttom */
 .btn  {
-    width:35%;
+    width:30%;
     background-color: chartreuse;
     border: 2px solid chartreuse;
     cursor: pointer;
+}
+h3{
+    font-size: 15px;
 }

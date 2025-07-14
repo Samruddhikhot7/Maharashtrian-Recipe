@@ -1,0 +1,43 @@
+.div1, .div2, .div3, .div4 {
+  background-image: url("https://img.freepik.com/premium-vector/simple-blank-vintage-mandala-square-background-with-detailed-petals-patterns_179530-1669.jpg?semt=ais_hybrid&w=740");
+  height: 37vh;
+  width: 37vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 3%;
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner {
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #2e7d32; /* Elegant green shade */
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 1000;
+  text-align: center;
+  margin-top: 10px;
+  color: #2e7d32; /* Elegant green shade */
+  font-size: 2rem;
+  letter-spacing: 1px;
+}

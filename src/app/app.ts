@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { LoginPg } from './login-pg/login-pg';
 import { SignupPg } from './signup-pg/signup-pg';
+import { Header } from './header/header';
 
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [LoginPg, SignupPg, RouterOutlet],
+  imports: [LoginPg, SignupPg,RouterOutlet,Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
