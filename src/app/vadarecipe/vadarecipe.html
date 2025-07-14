@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parchment Scroll Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #fdf6e3;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* === Scroll Body === */
+    .scroll-wrapper {
+      position: relative;
+      width: 100vw;
+      background: url('https://static.vecteezy.com/system/resources/previews/050/478/118/non_2x/decorative-ancient-scroll-on-white-png.png') no-repeat center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      animation: unrollVertical 2.5s ease-out forwards;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes unrollVertical {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 100vh;
+      }
+    }
+
+    /* === Content on Scroll === */
+    .scroll-content {
+      opacity: 0;
+      text-align: center;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 2.5s;
+      padding: 20px;
+      width: 90%;
+      color: #3e3e3e;
+      overflow-y: auto;
+      max-height: 80vh;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      color: #2e7d32;
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      width: 150px;
+      height: 150px;
+      background-image: url("https://img.freepik.com/premium-vector/simple-blank-vintage-mandala-square-background-with-detailed-petals-patterns_179530-1669.jpg?semt=ais_hybrid&w=740");
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* === Recipe Card === */
+    .recipe-card {
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+      max-width: 700px;
+      padding: 20px;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .recipe-img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .recipe-details {
+      flex: 1;
+      color: #4b2e14;
+    }
+
+    .recipe-details h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #b71c1c;
+    }
+
+    .recipe-details ul,
+    .recipe-details ol {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Parchment Scroll -->
+  <div class="scroll-wrapper">
+    <div class="scroll-content">
+      <!-- Vada Pav Recipe -->
+      <div class="recipe-card">
+        <div class="recipe-details">
+          <h2>Vada Pav</h2>
+          <h4>Ingredients:</h4>
+          <ul>
+            <li>2 Pav buns</li>
+            <li>2 Batata Vadas (fried potato balls)</li>
+            <li>1 tbsp Dry garlic chutney</li>
+            <li>Green chili (optional)</li>
+            <li>Butter or oil for toasting</li>
+          </ul>
+          <h4>Instructions:</h4>
+          <ol>
+            <li>Slice pav buns in half and toast lightly with butter/oil.</li>
+            <li>Place garlic chutney on one side of the bun.</li>
+            <li>Add the hot batata vada in between.</li>
+            <li>Press gently and serve with fried green chili.</li>
+          </ol>
+        </div>
+      </div>
+
+   
+
+    </div>
+  </div>
+
+</body>
+</html>

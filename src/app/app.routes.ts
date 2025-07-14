@@ -11,6 +11,7 @@ import { Beverage } from './beverage/beverage';
 import { Favourite } from './favourite/favourite';
 import { Aboutus } from './aboutus/aboutus';
 import { Profile } from './profile/profile';
+import { Vadarecipe } from './vadarecipe/vadarecipe';
 // import { LandingPage } from './landing-page/landing-page';
 
 export const routes: Routes = [
@@ -26,4 +27,5 @@ export const routes: Routes = [
     {path: 'favourite', component: Favourite},
     {path: 'aboutus', component: Aboutus},
     {path: 'profile', component: Profile},
+    {path: 'vadarecipe', component: Vadarecipe},
 ];
